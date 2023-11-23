@@ -23,8 +23,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
-    - name: Install Elastic Beanstalk CLI
-      run: yum install -y awsebcli
+    #- name: Install Elastic Beanstalk CLI
+    #  run: yum install -y awsebcli
 
     - name: Deploy to Elastic Beanstalk
       run: eb deploy Myapp-env
